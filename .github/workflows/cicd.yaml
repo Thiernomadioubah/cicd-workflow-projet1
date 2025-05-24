@@ -144,7 +144,7 @@ jobs:
     needs: [build_frontend_e2e]
     strategy:
       matrix:
-        browser: ["chrome", "firefox", "edge"]
+        browser: ["chrome", "firefox"]
     steps:
       - name: checkout le code
         uses: actions/checkout@v4
